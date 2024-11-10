@@ -8,7 +8,7 @@ Real-time weather updates for any city
 Displays temperature, weather conditions, and weather icons
 Responsive and user-friendly interface
 Demo
-Check out the Live Demo (add link here if available).
+C
 
 Getting Started
 Prerequisites
@@ -17,7 +17,7 @@ Basic understanding of React.
 
 API Key Setup
 To use the OpenWeather API, you’ll need an API key. You can obtain one by signing up at OpenWeather.
-API : https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units=Metric
+API : https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid={API key}&units=Metric
 
 Usage
 Open the app in your browser.
