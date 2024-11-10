@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+
+/* top color=#00AEEF
+    down color=#000080 */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
+  background-image: url('assets/weather-images/3094102.jpg');
+  backdrop-filter:30%;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+
+    
+}
+.searchicon{
+   
+    width: 40px;
+    object-fit: contain;
+    
+    background-color: transparent;
+    
+
+}
+.container{
+    width: 750px;
+    padding: 20px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.input-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border: 1px solid rgb(98, 88, 88);
+    padding: 10px 10px ;
+    border-radius: 10px;
+    overflow: hidden;
+  
+   
+}
+.cityInput{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+   
+
+}
+.search-container{
+    margin-top: 4px;
+    object-fit: contain;
+    cursor: pointer;
+    
+}
+
+
+.images{
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+
+}
+.images img{
+    width: 160px;
+    height: 160px; 
+
+}
+.temp,.location,.country{
+    margin-top: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.temp{
+    font-weight: 500;
+    color: #333;
+}
+.location{
+    color:black;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
+}
+.country{
+    color: rgb(22, 22, 23);
+    font-weight: 500;
+    font-size: 18px;
+}
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+.cord div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+span{
+    font-size: 14px;
+
+}
+span:nth-child(2),.humidity-percent,.wind-percent{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    padding: 5px;
+}
+.data-container{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;
+    
+}
+.element{
+    text-align: center;
+
+}
+.humidity-text,.wind-text{
+    color: #888;
+    font-size: 12px;
+}
+.copyright{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+.name{
+    font-weight: 600;
+}
+/* 8d312ea85ca24b56c872e5d285cf08e4 */
+/* https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} */
+
+/* For tablets (up to 768px wide) */
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .cityInput {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    .temp {
+      font-size: 28px;
+    }
+  
+    .images img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .location, .country {
+      font-size: 16px;
+    }
+  
+    .cord span {
+      font-size: 12px;
+    }
+  
+    .humidity-percent, .wind-percent {
+      font-size: 16px;
+    }
+  }
+  
+  /* For mobile phones (up to 480px wide) */
+  @media (max-width: 480px) {
+    body {
+      justify-content: flex-start;
+      padding: 10px;
+      background-attachment: scroll;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+      padding: 8px;
+      border-radius: 8px;
+    }
+  
+    .cityInput {
+      font-size: 14px;
+      padding: 6px;
+      margin-bottom: 8px;
+    }
+  
+    .searchicon {
+      width: 30px;
+    }
+  
+    .images img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .temp {
+      font-size: 24px;
+    }
+  
+    .location, .country {
+      font-size: 14px;
+    }
+  
+    .cord {
+      flex-direction: column;
+    }
+  
+    .cord span {
+      font-size: 12px;
+    }
+  
+    .data-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .humidity-text, .wind-text {
+      font-size: 10px;
+    }
+  
+    .copyright {
+      font-size: 10px;
+    }
+  }
+  
