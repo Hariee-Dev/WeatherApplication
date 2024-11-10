@@ -159,7 +159,7 @@ span:nth-child(2),.humidity-percent,.wind-percent{
 .name{
     font-weight: 600;
 }
-/* 8d312ea85ca24b56c872e5d285cf08e4 */
+
 /* https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} */
 
 /* For tablets (up to 768px wide) */
